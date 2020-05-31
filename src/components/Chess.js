@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Cube = props => {
-  const { w, h, color } = props;
+const Chess = props => {
+  const { size, color } = props;
   return (
-    <svg width={w || '5rem'} height={h || '5rem'} viewBox="0 0 158.75 158.75" {...props}>
+    <svg width={size || '100%'} height={size || '100%'} viewBox="0 0 158.75 158.75" {...props}>
       <g
         clipRule="evenodd"
         fillRule="evenodd"
@@ -21,4 +21,4 @@ const Cube = props => {
   );
 };
 
-export default Cube;
+export default Chess;

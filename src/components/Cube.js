@@ -3,7 +3,7 @@ import React from 'react';
 const Cube = props => {
   const { size, color } = props;
   return (
-    <svg width={size || '5rem'} height={size || '5rem'} viewBox="0 0 158.75 158.75" {...props}>
+    <svg width={size || '100%'} height={size || '100%'} viewBox="0 0 158.75 158.75" {...props}>
       <g
         clipRule="evenodd"
         fillRule="evenodd"

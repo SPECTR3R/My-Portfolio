@@ -1,12 +1,16 @@
+import React from 'react';
 
-import React from 'react'
-import Cube from '../components/Cube'
+import Figurine from '../components/Figurine';
+import { Flex } from '@chakra-ui/core';
+
 const MyPhoto = () => {
   return (
-    <div>
-      <Cube></Cube>
-    </div>
-  )
-}
+    <>
+      <Flex>
+        <Figurine legend={'holi'} iconSVG="Turtle" iconSize="10rem" iconColor="blue" />
+      </Flex>
+    </>
+  );
+};
 
-export default MyPhoto
+export default MyPhoto;

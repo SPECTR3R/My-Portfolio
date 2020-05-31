@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, useColorMode, IconButton, Button, Box } from '@chakra-ui/core';
+import { useColorMode, IconButton, } from '@chakra-ui/core';
 
 const RoundButton = ({ icoDay, icoNigth = icoDay, fcn }) => {
   const { colorMode } = useColorMode();
@@ -10,7 +10,7 @@ const RoundButton = ({ icoDay, icoNigth = icoDay, fcn }) => {
       onClick={fcn}
       as={colorMode === 'light' ? icoDay : icoNigth}
       bg={colorMode === 'light' ? 'white' : 'gray.800'}
-      _hover={{ bg: 'gray.400' }}
+      _hover={{ bg: `${colorMode === 'light' ? 'gray.200' : 'gray.700'}` }}
       w={45}
       h={45}
       p={2}
