@@ -14,6 +14,7 @@ const RoundButton = ({ icoDay, icoNigth = icoDay, fcn }) => {
       w={45}
       h={45}
       p={2}
+      m={'2px'}
     />
   );
 };
