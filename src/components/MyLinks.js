@@ -1,11 +1,16 @@
 import React from 'react';
 
 import Figurine from './Figurine';
-import { Flex, Text, Box } from '@chakra-ui/core';
-import { Image } from '@chakra-ui/core';
+import { Flex } from '@chakra-ui/core';
 const MyLinks = () => {
   return (
-    <Flex>
+    <Flex
+      w={['90%', '90%', '80%', '992px']}
+      direction="row"
+      wrap="wrap"
+      justify="space-around"
+      align="center"
+    >
       <Figurine legend={'My Blog'} iconSVG="Turtle" />
       <Figurine legend={'My Story'} iconSVG="Diver" />
       <Figurine legend={'My Resumé'} iconSVG="Chess" />

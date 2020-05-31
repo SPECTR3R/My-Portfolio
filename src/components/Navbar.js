@@ -31,7 +31,7 @@ const Navbar = () => {
       w={['90%', '90%', '80%', '992px']}
       height="70px"
       align="center"
-      justify="space-between"
+      justify="space-around"
     >
       <Box>
         <RoundButton icoDay={IoMdMoon} icoNigth={IoMdSunny} fcn={toggleColorMode}></RoundButton>
@@ -55,6 +55,7 @@ const Navbar = () => {
           <RoundButton icoDay={AiFillLinkedin}></RoundButton>
         </a>
         <RoundButton fcn={onOpen} icoDay={GiHamburgerMenu}></RoundButton>
+
       </Flex>
       <Drawer onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />

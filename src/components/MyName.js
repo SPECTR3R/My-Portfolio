@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Flex, Text, Box } from '@chakra-ui/core';
-import { Image } from '@chakra-ui/core';
+import { Flex, Text, Box, Image, useColorMode } from '@chakra-ui/core';
 const MyName = () => {
+  const { colorMode } = useColorMode();
+
   return (
     <Flex
       className="holi"
@@ -11,11 +12,11 @@ const MyName = () => {
       align="center"
       direction={['column', 'column', 'row']}
       justify="center"
-      my={['30px', '10px', '30px']}
+      my={['10px', '10px', '30px']}
     >
       <Image
         rounded="full"
-        src="/images/MeDay.jpg"
+        src={colorMode === 'light' ? '/images/meDay.jpg' : '/images/meNight.png'}
         alt="A. del Río"
         w={['200px', '200px', '250px', '300px']}
         mb={['20px', '20px', '0']}
@@ -23,14 +24,13 @@ const MyName = () => {
       />
       <Box
         textAlign={['center', 'center', 'left']}
+        fontFamily="Source Sans Pro"
         pl={['0', '0', '30px', '40px']}
         fontSize={['30px', '30px', '35px', '40px']}
       >
-        <Text fontFamily="Source Sans Pro">Hello, I am</Text>
-        <Text fontFamily="Source Sans Pro" fontWeight={900}>
-          Armando del Río
-        </Text>
-        <Text fontFamily="Source Sans Pro">
+        <Text>Hello, I am</Text>
+        <Text fontWeight={900}> Armando del Río</Text>
+        <Text>
           <i>Engineer & Software Developer</i>
         </Text>
       </Box>
