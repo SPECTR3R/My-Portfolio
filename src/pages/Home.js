@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import MyPhoto from '../components/MyPhoto';
-
+import MyLinks from '../components/MyLinks';
+import MyName from '../components/MyName';
 
 const Home = () => {
   return (
     <>
-      <Navbar></Navbar>
-      <MyPhoto></MyPhoto>
+      <MyName></MyName>
 
+      {/* <MyLinks></MyLinks> */}
     </>
   );
 };
