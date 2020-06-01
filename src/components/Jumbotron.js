@@ -36,11 +36,16 @@ const Jumbotron = () => {
         ></Card>
         <Card
           cardSrc="/images/research.png"
-          cardButton="Check out my paper!"
+          cardButton="Download my paper!"
           cardTitle="Scientific research"
           cardText="I'm a scientist and an active member of the Institute of Electrical and Electronics Engineers (IEEE). I have been studying respiratory sounds from patients with Diffuse Interstitial Pneumonia (DIP). I use python, machine learning, neural networks, and advanced digital signal processing algorithms to develop methodologies to automate the diagnosis of DIP through the analysis of the respiratory sounds."
         ></Card>
-        <Card cardTitle=" Teaching" cardText=""></Card>
+        <Card
+          cardSrc="/images/teaching.jpeg"
+          cardTitle=" Teaching"
+          cardButton="Check my latest workshop"
+          cardText="I'm a teacher by nature, I think it is the best way to learn any subject and improve your soft skills. I've taught programming, science, and mathematics courses in all levels of education (from elementary school to some college). Some of the courses I've taught are:  Digital signal processing, numeric methods, mathematics, diferential equations, calculus, sciences workshops and scratch programming for children."
+        ></Card>
       </Flex>
     </Box>
   );
