@@ -11,6 +11,7 @@ import {
   DrawerBody,
   useDisclosure,
   DrawerCloseButton,
+  Tooltip,
 } from '@chakra-ui/core';
 
 import { Link, useLocation } from 'react-router-dom';
@@ -27,35 +28,39 @@ const Navbar = () => {
   const location = useLocation();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Flex
-      w={['90%', '90%', '80%', '992px']}
-      height="70px"
-      align="center"
-      justify="space-between"
-    >
+    <Flex w={['90%', '90%', '80%', '992px']} height="70px" align="center" justify="space-between">
       <Box>
-        <RoundButton icoDay={IoMdMoon} icoNigth={IoMdSunny} fcn={toggleColorMode}></RoundButton>
+        <Tooltip label="Toggle color">
+          <Box display="inline">
+            <RoundButton icoDay={IoMdMoon} icoNigth={IoMdSunny} fcn={toggleColorMode} />
+          </Box>
+        </Tooltip>
+
         {location.pathname !== '/' && (
-          <Link to="/">
-            <RoundButton as={Link} to="/" icoDay={AiFillHome}></RoundButton>
-          </Link>
+          <Tooltip label="Go to main page">
+            <Link to="/">
+              <RoundButton as={Link} to="/" icoDay={AiFillHome} />
+            </Link>
+          </Tooltip>
         )}
       </Box>
       <Flex>
-        <a
-          href="https://drive.google.com/file/d/12quXyxOlnTeopBgwaETs3ky05_IzyvL_/view?usp=sharing"
-          target="blank"
-        >
-          <RoundButton icoDay={FaHorseHead}></RoundButton>
-        </a>
-        <a href="https://github.com/SPECTR3R">
-          <RoundButton icoDay={FaGithub}></RoundButton>
+        <Tooltip label="Download my Resumé!">
+          <a
+            href="https://drive.google.com/file/d/12quXyxOlnTeopBgwaETs3ky05_IzyvL_/view?usp=sharing"
+            target="blank"
+          >
+            <RoundButton icoDay={FaHorseHead} />
+          </a>
+        </Tooltip>
+
+        <a href="https://github.com/SPECTR3R" target="blank">
+          <RoundButton icoDay={FaGithub} />
         </a>
         <a href="https://www.linkedin.com/in/adrio1992/" target="blank">
-          <RoundButton icoDay={AiFillLinkedin}></RoundButton>
+          <RoundButton icoDay={AiFillLinkedin} />
         </a>
-        <RoundButton fcn={onOpen} icoDay={GiHamburgerMenu}></RoundButton>
-
+        <RoundButton fcn={onOpen} icoDay={GiHamburgerMenu} />
       </Flex>
       <Drawer onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
