@@ -31,7 +31,7 @@ const Navbar = () => {
       w={['90%', '90%', '80%', '992px']}
       height="70px"
       align="center"
-      justify="space-around"
+      justify="space-between"
     >
       <Box>
         <RoundButton icoDay={IoMdMoon} icoNigth={IoMdSunny} fcn={toggleColorMode}></RoundButton>
