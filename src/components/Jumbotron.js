@@ -22,7 +22,7 @@ const Jumbotron = () => {
         <Card
           cardSrc="/images/mathMode.png"
           f
-          cardTitle="Full-Stack web development"
+          cardTitle="Full-Stack development"
           cardButton="View live example"
           cardText="I make beautiful, modern, and responsive web applications.
            For my frontend, I use ES6+ Javascript, CSS, SCSS, Chakra UI, Bulma UI, Bootstrap, Styled Components, Ant Design, React js, Hooks, and Context. For my backend, I use Node js, Handlebars, Express, Session, Passport, social authentication, Mongo DB, Mongoose, NoSQL, Axios, CORS, Postman, and Async functions."
@@ -44,7 +44,7 @@ const Jumbotron = () => {
           cardSrc="/images/teaching.jpeg"
           cardTitle=" Teaching"
           cardButton="Check my latest workshop"
-          cardText="I'm a teacher by nature, I think it is the best way to learn any subject and improve your soft skills. I've taught programming, science, and mathematics courses in all levels of education (from elementary school to some college). Some of the courses I've taught are:  Digital signal processing, numeric methods, mathematics, diferential equations, calculus, sciences workshops and scratch programming for children."
+          cardText="I'm a teacher by nature, I think it is the best way to learn any subject and improve your soft skills. I've taught programming, science, and mathematics courses in all levels of education (from elementary school to some college). Some of the courses I've taught are:  Digital signal processing, numeric methods, mathematics, diferential equations, calculus, science workshops and scratch programming for children."
         ></Card>
       </Flex>
     </Box>
