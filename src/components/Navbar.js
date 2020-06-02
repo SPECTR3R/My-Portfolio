@@ -69,9 +69,8 @@ const Navbar = () => {
 
           <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
           <DrawerBody>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
+            <p>To do...</p>
+            <p>To do...</p>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
