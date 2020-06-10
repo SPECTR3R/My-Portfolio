@@ -16,8 +16,6 @@
 - CSS/HTML
 
 ### Backend:
-- Express
+- Firebase
 - Node js
-- Passport
-- HTML
 - Async/await
